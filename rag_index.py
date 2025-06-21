@@ -22,7 +22,8 @@ from langchain_community.document_loaders import (
 load_dotenv()
 
 
-EMBED_MODEL = "BAAI/bge-base-en-v1.5"
+# rag_index.py
+EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 LLM_MODEL   = os.getenv("REPO_ID", "HuggingFaceH4/zephyr-7b-beta")
 HF_TOKEN    = os.getenv("HUGGINGFACE_API_TOKEN")
 
